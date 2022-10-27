@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;50;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.hero-banner {
+    width: 100%;
+    height: 110vh;
+    background-color: #fff5ec;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    /* position: sticky; */
+}
+
+.logo {
+    width: 155px;
+    height: 51px;
+}
+
+nav ul {
+    margin-right: 200px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #2E266F;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 20px;
+}
+
+nav ul li a:hover {
+    color: #FE043C;
+}
+
+.icon-nav {
+    z-index: 999;
+}
+
+.icon-nav .user-logo {
+    background: #FE043C;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon-nav .icon-text {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.icon-nav .icon-text {
+    margin-left: 5px;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+}
+.placeholderloc{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.right-sidebar {
+    width: 30%;
+    height: 95%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FE043C;
+}
+
+.contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider {
+    display: none;
+}
+
+.container-slider {
+    width: 100%;
+    /* max-width: 612px; */
+    position: relative;
+    margin: auto;
+}
+
+.slider-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 8px 16px;
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+/* setting the position of the previous button towards left */
+.previous {
+    margin-top: 12rem;
+    left: 85%;
+    z-index: 100000;
+}
+
+
+
+/* setting the position of the next button towards right */
+.next {
+    right: 5%;
+    margin-top: 12rem;
+}
+
+/* On hover, adding a background color */
+.previous:hover,
+.next:hover {
+    color: rgb(255, 253, 253);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left {
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+.left h2 {
+    color: #F5EBE6;
+    font-size: 100px;
+    line-height: 1;
+}
+
+.left h3 {
+    color: #2E266F;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+form {
+    position: relative;
+    width: 350px;
+    margin-top: 20px;
+}
+
+.left input[type="text"] {
+    padding: 14px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #727272;
+}
+
+.left input[type="submit"] {
+    background: #FE043C;
+    border: none;
+    width: 70px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    width: 120px;
+    border-top-left-radius: 25px;
+    cursor: pointer;
+}
+
+.rights {
+    width: 50%;
+    /* height: 920px; */
+    z-index: 999;
+    position: relative;
+}
+
+.rights .dotone {
+    width: 40%;
+    /* height: 415px; */
+    position: absolute;
+    z-index: -1;
+}
+
+.rights .dottwo {
+    margin-top: 43%;
+    /* margin-bottom: 50%; */
+    width: 40%;
+    height: 250px;
+    /* height: 415px; */
+    position: absolute;
+    z-index: -1;
+}
+
+.rights .veg {
+    width: 40%;
+    top: -140px;
+    position: absolute;
+    right: 280px;
+    z-index: -1;
+}
+
+.rights .plate {
+    width: 80%;
+    margin-left: 0px;
+    margin-top: -10px;
+}
+
+.locationtag {
+    background: #FE043C;
+    width: 15%;
+    height: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-top: -4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.locationtag p {
+    color: #fff;
+    margin: 15px;
+    padding-left: 15px;
+}
+
+.locationtag h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 65px
+}
+
+.our-service-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff5ec;
+}
+
+.our-service-container .container-one {
+    width: 80%;
+    margin-top: 0px;
+}
+
+.our-service-container .container-one {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    margin-left: 100px;
+}
+
+.container-one .rectangle {
+    box-sizing: border-box;
+    width: 20px;
+    height: 110px;
+    border: 1px solid red;
+    margin-right: 640px;
+    background-color: red;
+}
+
+.container-one h2 {
+    color: #2E266F;
+    font-size: 50px;
+    line-height: 1.2;
+    padding-left: 40px;
+}
+
+.container-two {
+    width: 100%;
+    background-image: radial-gradient(grey 2px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+
+}
+
+.contain {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lefthand {
+    width: 50%;
+    height: 578px;
+}
+
+.leftone {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.lefthand .squareone {
+    height: 250px;
+    width: 250px;
+    background-color: #FFEDDE;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.meeting {
+    width: 150px;
+    height: 150px;
+}
+
+.squareone {
+    /* position: absolute; */
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    /* margin-left: 50px; */
+}
+
+/* 
+.arrowleft{
+    color: #FE043C;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.arrowleftline{
+
+} */
+
+/* .arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.leftone {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+} */
+
+.squaretwo {
+    margin-top: 100px;
+}
+
+.squaretwo h3 {
+    color: #2E266F;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.squaretwo p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.lefttwo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.squarethree {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.squarethree h3 {
+    color: #2E266F;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.squarethree p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.spacelong {
+    width: 200px;
+    height: 2px;
+    border: 2px solid #FE043C;
+    background-color: #FE043C;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+.spacesmall {
+    width: 20px;
+    height: 2px;
+    border: 2px solid #FE043C;
+    background-color: #FE043C;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.user-iconli {
+    list-style-type: none;
+}
+
+.arrowsleft {
+    margin-top: 45px;
+    /* margin-right: 4rem; */
+    margin-left: -8rem;
+    font-size: 120px;
+    color: red;
+    z-index: 999;
+}
+
+
+.arrowsright {
+    margin-right: -9rem;
+    /* margin-left: 5rem; */
+    font-size: 120px;
+    color: red;
+    z-index: 999;
+}
+
+.lefthand .squarefour {
+    height: 230px;
+    width: 230px;
+    background-color: #FFEDDE;
+}
+
+.squarefour {
+    padding: 50px;
+    text-align: center;
+}
+
+.dish {
+    width: 130px;
+    height: 130px;
+}
+
+.righthand {
+    width: 50%;
+    height: 595px;
+}
+
+.righthand .squarebox {
+    height: 500px;
+    width: 500px;
+    background-color: #FFEDDE;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.squarebox {
+    padding: 50px;
+    text-align: center;
+}
+
+.squarebox h3 {
+    margin-top: 30px;
+    color: #2E266F;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.squarebox p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.download-service {
+    width: 100%;
+    height: 110vh;
+    background: #FFEDDE;
+    display: flex;
+}
+
+.leftarea {
+    /* padding-top: 40px; */
+    margin-top: 0px;
+    width: 50%;
+    height: 100vh;
+    /* background-color: #FE043C; */
+}
+
+.blockdown {
+    display: flex;
+    margin-top: 225px;
+}
+
+.leftarea .rectangle {
+    box-sizing: border-box;
+    width: 20px;
+    height: 110px;
+    border: 1px solid red;
+    margin-left: 100px;
+    background-color: red;
+}
+
+.leftarea h2 {
+    color: #2E266F;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-left: 20px;
+    /* margin-top: 150px; */
+}
+
+.leftarea p {
+    margin-left: 175px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.gplayimg {
+    margin-left: 150px;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.appstoreimg {
+    width: 200px;
+    height: 100px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.downloadicon {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rightarea {
+    /* padding-top: 40px; */
+    margin-top: 0px;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    /* text-align: center; */
+    /* background-color: blue;  */
+}
+
+.dotbackground {
+    position: absolute;
+    width: 415px;
+    height: 415px;
+    background-image: radial-gradient(grey 2px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+    margin: 100px;
+}
+
+.rightarea .vegleaf {
+    margin-top: 180px;
+    width: 60%;
+    /* height: 415px; */
+    position: absolute;
+}
+
+.vegleaf {
+    z-index: 999;
+}
+
+.rightarea .innermob {
+    margin-left: 160px;
+    width: 60%;
+    /* height: 415px; */
+    position: absolute;
+}
+
+.innermob {
+    z-index: 999;
+}
+
+.rightarea .mobdeskimg {
+    position: absolute;
+    /* width: 300px; */
+    height: 625px;
+    margin-left: 285px;
+    margin-top: 50px;
+    /* background-color: rgb(300, 300, 300); */
+}
+
+.mobilespace {
+    background-color: #fafafa;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    /* border: 1px solid black; */
+    /* border-start-end-radius: 10px; */
+    /* border-end-end-radius: 10px; */
+    /* overflow: visible; */
+    border-radius: 16px;
+    margin-top: 2.5rem;
+    margin-left: 22rem;
+    z-index: 999;
+}
+
+.mobdeskimg {
+    z-index: 999;
+}
